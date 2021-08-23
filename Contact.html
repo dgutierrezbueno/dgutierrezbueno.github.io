@@ -8,39 +8,107 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link type="text/css" rel="stylesheet" href="estilopersonal/estilopersonal.css">
     </head>
     <body>
-        <h1>Mi contacto</h1>
-        <a href="index.html">Home</a>
-         <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15834.699538943927!2d-78.47094298299271!3d-7.1635324769346305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1629351563544!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-         </section>
+        <header>
+            <img src="images/logo.png" alt="logo pagina">
+
+             <ul>
+                <li> <a href="Home.html"style="text-decoration: none"> Inicio</a> </li>
+                <li><a href="About.html"style="text-decoration: none"> Nosotros</a> </li> 
+                <li> <a href="Contact.html"style="text-decoration: none"> Contacto</a> </li> 
+             </ul>
+        </header>
+
+         <div id="frot">
+             
+            <a href="index.html"style="text-decoration: none"> Esta aqui: Inicio/Contacto</a>
+         </div>
         
+
         <section>
-            <h3>Envíanos tus comentarios  por e-mail</h3>
-            <form action="MAILTO:sugerencias@miempresa.com" method="post" enctype="text/plain">
-            Nombre:<br>
-            <input type="text" name="name" value=""><br>
-            E-mail:<br>
-            <input type="text" name="mail" value=""><br>
-            Comentario:<br>
-            <input type="text" name="comment" value="" size="50"><br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-            </form>
+            <div id="mapa">
             
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15834.699538943927!2d-78.47094298299271!3d-7.1635324769346305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1629351563544!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+             </div>
+
         </section>
+          
 
-        <section>
-            <div>
-                 <h4>Puedes Visitarnos  en nuestras redes sociales y sitios Web</h4>
-                  <a href="https://m.facebook.com/?_rdr"> facebook</a>
-                  <a href="https://ing-davidgb.negocio.site/"> Consultor</a>
+            <div >
 
+                <form class="form">
+                    <h2 class="form_title"> Escríbanos y pronto le responderemos</h2>
+
+                  <div class="form_container">
+                      <div class="form_group">
+                          <input type="text" id="name" class="form_input" placeholder="">
+                          <label for="name" class="form_label">Nombres</label>
+                          <span class="form_line"></span>
+                      </div>
+
+                      <div class="form_group">
+                        <input type="text" id="correo" class="form_input" placeholder="">
+                        <label for="correo" class="form_label">Correo de contacto</label>
+                        <span class="form_line"></span>
+                    </div>
+
+                    <div class="form_group">
+                        <input type="text" id="telefono" class="form_input" placeholder="">
+                        <label for="telefono" class="form_label">Número telefónico</label>
+                        <span class="form_line"></span>
+                    </div>
+
+                    <div class="form_group">
+                        <input type="text" id="comentario" class="form_input" placeholder="">
+                        <label for="comentario" class="form_label">Escribanos su comentario</label>
+                        <span class="form_line"></span>
+                    </div>
+
+                    <input type="submit" class="form_submit" value="Enviar">
+                  </div>
+
+                </form>
+
+                
             </div>
+        
+        
+
+        <section id="informacion">
+         
+             <div id="inf">
+                 <ul>
+                     <h2>Nuestros servicios</h2>
+                     <li> Desarrollo Web</li>
+                     <li> Redes y conectividad</li>
+                     <li>Gestion de Procesos</li>
+                     <li>Marketing</li>
+                 </ul>
+
+                 <ul>
+                    <h2>Redes Sociales</h2>
+                    <li> <a href="https://m.facebook.com/?_rdr" style="text-decoration: none"> facebook</a> </li>
+                    
+                </ul>
+
+                <ul>
+                    <h2>Lo mas visitado</h2>
+                    <li> <a href="https://ing-davidgb.negocio.site/" style="text-decoration: none"> Consultor</a>
+                        </a> </li>
+                    
+                </ul>
+             </div>
+           
         </section>
         
         <script src="" async defer></script>
-        <footer> @ David Gutierrez Bueno</footer>
+        <div id="pie">
+            <footer> @ 2021 DGB _ David Gutierrez Bueno</footer>
+        </div>
+        
     </body>
 </html>
