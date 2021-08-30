@@ -9,106 +9,216 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link type="text/css" rel="stylesheet" href="estilopersonal/estilopersonal.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     </head>
     <body>
         <header>
-            <img src="images/logo.png" alt="logo pagina">
-
-             <ul>
-                <li> <a href="Home.html"style="text-decoration: none"> Inicio</a> </li>
-                <li><a href="About.html"style="text-decoration: none"> Nosotros</a> </li> 
-                <li> <a href="Contact.html"style="text-decoration: none"> Contacto</a> </li> 
-             </ul>
-        </header>
-
-         <div id="frot">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" >
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                      <img class="logotipo" src="images/logo/logo.png" alt="logotipo">
+                    </a>
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="about.html">Galeria</a></li>
+                          <li><a class="dropdown-item" href="#">Mas..</a></li>
+                          
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                      </li>
+    
+                         <li>
+                             <img class="iconos-redes-sociales" src="images/redes/facebook.png" alt="facebook">
+                             <img class="iconos-redes-sociales" src="images/redes/instagram.png" alt="instagram">
+                             <img class="iconos-redes-sociales" src="images/redes/gorjeo.png" alt="twitter">
+                         </li>
+    
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+           
+           </header>
+           <div id="frot">
              
             <a href="index.html"style="text-decoration: none"> Esta aqui: Inicio/Contacto</a>
          </div>
         
-
         <section>
-            <div id="mapa">
-            
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15834.699538943927!2d-78.47094298299271!3d-7.1635324769346305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1629351563544!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            
-             </div>
-
-        </section>
-          
-
-            <div >
-
-                <form class="form">
-                    <h2 class="form_title"> Escríbanos y pronto le responderemos</h2>
-
-                  <div class="form_container">
-                      <div class="form_group">
-                          <input type="text" id="name" class="form_input" placeholder="">
-                          <label for="name" class="form_label">Nombres</label>
-                          <span class="form_line"></span>
-                      </div>
-
-                      <div class="form_group">
-                        <input type="text" id="correo" class="form_input" placeholder="">
-                        <label for="correo" class="form_label">Correo de contacto</label>
-                        <span class="form_line"></span>
+            <form class="form2">
+                <div class="field">
+                    <label class="label">Nombres</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombres">
                     </div>
-
-                    <div class="form_group">
-                        <input type="text" id="telefono" class="form_input" placeholder="">
-                        <label for="telefono" class="form_label">Número telefónico</label>
-                        <span class="form_line"></span>
-                    </div>
-
-                    <div class="form_group">
-                        <input type="text" id="comentario" class="form_input" placeholder="">
-                        <label for="comentario" class="form_label">Escribanos su comentario</label>
-                        <span class="form_line"></span>
-                    </div>
-
-                    <input type="submit" class="form_submit" value="Enviar">
                   </div>
-
-                </form>
-
+                  
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-danger" type="email" placeholder="Email ">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </span>
+                    </div>
+                    <p class="help is-danger">este email es invalido</p>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Pais</label>
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Seleccionar</option>
                 
-            </div>
-        
-        
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Mensaje"></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        Estoy de acuerdo con los Términos y condiciones
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="question">
+                        Yes
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="question">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link">Enviar</button>
+                    </div>
+                    <div class="control">
+                      <button class="button is-link is-light">Cancelar</button>
+                    </div>
+                  </div>
+              </form>
+             
+        </section>
+       
+       
 
-        <section id="informacion">
-         
+
+
+        <section >
+                      </div>
+                           <div class="table-text">
+                         <h2> Nuestros Servicios</h2>
+                         </div>
+                        <div >
              <div id="inf">
                  <ul>
-                     <h2>Nuestros servicios</h2>
-                     <li> Desarrollo Web</li>
-                     <li> Redes y conectividad</li>
-                     <li>Gestion de Procesos</li>
-                     <li>Marketing</li>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Redes y conectividad
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Redes y conectividad.</strong> Realizamos Instalaciones de Cableado para Redes Informáticas e instalaciones de Cableado de gran envergadura.
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 Marketing
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>Marketing.</strong> Creemos que de nada sirve tener una excelente aplicación, sitio web o producto si no estas llegando a tus clientes o usuarios potenciales.
+                              </div>
+                            </div>
+                          </div>
+                        
+                      </div>
+                   
                  </ul>
 
-                 <ul>
-                    <h2>Redes Sociales</h2>
-                    <li> <a href="https://m.facebook.com/?_rdr" style="text-decoration: none"> facebook</a> </li>
-                    
-                </ul>
+                 <div id="cell">
+                      <img src="images/redes/celular.jpg" alt="celular">
 
-                <ul>
-                    <h2>Lo mas visitado</h2>
-                    <li> <a href="https://ing-davidgb.negocio.site/" style="text-decoration: none"> Consultor</a>
-                        </a> </li>
-                    
-                </ul>
-             </div>
+                      <div id="content">
+                        <div class="field has-addons">
+                            <div class="control">
+                              <input class="input" type="text" placeholder="ing-davidgb">
+                            </div>
+                            <div class="control">
+                              <a class="button is-info" href="https://ing-davidgb.negocio.site/">
+                                Buscar
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+
+                 </div>
            
         </section>
+
+     
+
+    
         
-        <script src="" async defer></script>
-        <div id="pie">
-            <footer> @ 2021 DGB _ David Gutierrez Bueno</footer>
-        </div>
+        <footer>
+               
+            <img class="logotipo-footer" src="images/logo/logo.png" alt="logotipo">
+
+            <img class="iconos-redes-sociales" src="images/redes/facebook.png" alt="facebook">
+                         <img class="iconos-redes-sociales" src="images/redes/instagram.png" alt="instagram">
+                         <img class="iconos-redes-sociales" src="images/redes/gorjeo.png" alt="twitter">
+
+                         <p> @copy -Todos los derechos son reservados</p>
+         </footer>
+      
+       
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
         
     </body>
 </html>
