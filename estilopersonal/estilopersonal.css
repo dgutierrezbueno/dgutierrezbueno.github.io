@@ -1,7 +1,8 @@
 
 
 body{
-    background-attachment: rgb(247, 238, 238);
+    background-attachment: rgb(131, 175, 204);
+  
 }
 
 .logotipo{
@@ -123,5 +124,83 @@ margin-bottom: 20px;
     padding: 48px;
 
 }
+ 
 
+.lab05{
+
+    background-color: rgb(186, 245, 250);
+}
+#titlelab{
+    color: black;
+    text-align: center;
+}
+
+#section-uno{
+   
+    margin-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+ 
+  
+}
+.article-uno{
+    display: inline-block;
+    padding-top: 14px;
+    margin-left: 10%;
+
+}
+
+#buttonextraer{
+    background-color: rgb(235, 175, 13);
+    border-radius: 5px;
+    color: #ffffff;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border-color: #ffffff;
+   
+  
+}
+#buttoncolorear{
+    background-color: rgb(211, 69, 12);
+    border-radius: 5px;
+    color:#ffffff;
+   width: 150px;
+   padding: 5px;
+   margin-left: 5px;
+   border-color: #ffffff;
+}
+
+.estilo-input{
+    width: 250px;
+    padding: 5px;
+    border-color: #c45312;
+    width: 300px;
+}
+.estilo-input1{
+    border-color: #c45312;
+}
+.fondo-celeste{
+    background-color: rgb(20, 112, 134);
+    border: rgb(59, 69, 167);
+    color: #ffffff;
+
+}
+#section-dos{
+    padding: 20px;
+    margin-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+#section-tres{
+    padding: 20px;
+    margin-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+.fondo-naranja{
+    background-color: rgb(224, 75, 16);
+    border: rgb(59, 69, 167);
+    color: #ffffff;
+}
 
