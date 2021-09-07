@@ -45,3 +45,20 @@ function extraer(){
     
 }
  
+function colorear(){
+    let colores1 =document.querySelectorAll('.fondo-celeste');
+    colores1.forEach(elementva  => {
+
+        elementva.style.backgroundColor="rgb(224, 75, 16)";
+      
+      
+     });
+
+    let colores2 =document.querySelectorAll('.fondo-naranja');
+
+    colores2.forEach(elementva  => {
+        elementva.style.backgroundColor="rgb(20, 112, 134)";
+        
+    });
+    
+}
