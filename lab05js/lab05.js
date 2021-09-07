@@ -44,21 +44,37 @@ function extraer(){
      } 
     
 }
- 
+ let color=0;
 function colorear(){
     let colores1 =document.querySelectorAll('.fondo-celeste');
-    colores1.forEach(elementva  => {
-
-        elementva.style.backgroundColor="rgb(224, 75, 16)";
-      
-      
-     });
-
     let colores2 =document.querySelectorAll('.fondo-naranja');
+    if(color%2==0){
 
-    colores2.forEach(elementva  => {
-        elementva.style.backgroundColor="rgb(20, 112, 134)";
-        
-    });
+        colores1.forEach(elementva  => {
+
+            elementva.style.backgroundColor="rgb(224, 75, 16)";
+          
+          
+         });
     
+        colores2.forEach(elementva  => {
+            elementva.style.backgroundColor="rgb(20, 112, 134)";
+            
+        }); 
+         }else{
+            colores1.forEach(elementva  => {
+                elementva.style.backgroundColor="rgb(20, 112, 134)";
+                
+            }); 
+
+            colores2.forEach(elementva  => {
+
+                elementva.style.backgroundColor="rgb(224, 75, 16)";
+              
+              
+             });
+    }
+    
+    color +=1;
 }
+
